@@ -52,9 +52,9 @@ export const Menu = () => {
                     </Link>
                     <DropdownMenu>
                         <DropdownMenuTrigger className="me-5">
-                            <Link href="/" className="hover:text-[#111] font-medium text-lg">Home</Link>
+                            <Link href="/" className="hover:text-[#111] font-medium text-base">Home</Link>
                         </DropdownMenuTrigger>
-                        <DropdownMenuTrigger className="text-lg outline-none">About Us<i className="ri-arrow-down-s-line ms-2"></i></DropdownMenuTrigger>
+                        <DropdownMenuTrigger className="text-base outline-none">About Us<i className="ri-arrow-down-s-line ms-2"></i></DropdownMenuTrigger>
                         <DropdownMenuContent className="mt-8 w-48">
                             <DropdownMenuItem className="text-base cursor-pointer"><i className="ri-user-line"></i>About Us</DropdownMenuItem>
                             <DropdownMenuItem className="text-base cursor-pointer"><i className="ri-eye-line"></i>Our Vission</DropdownMenuItem>
@@ -64,7 +64,7 @@ export const Menu = () => {
                         </DropdownMenuContent>
                     </DropdownMenu>
                     <DropdownMenu>
-                        <DropdownMenuTrigger className="text-lg outline-none mx-5">Our Services<i className="ri-arrow-down-s-line ms-2"></i></DropdownMenuTrigger>
+                        <DropdownMenuTrigger className="text-base outline-none mx-5">Our Services<i className="ri-arrow-down-s-line ms-2"></i></DropdownMenuTrigger>
                         <DropdownMenuContent className="mt-8 w-48">
                             <DropdownMenuItem className="text-base cursor-pointer"><i className="ri-user-line"></i>About Us</DropdownMenuItem>
                             <DropdownMenuItem className="text-base cursor-pointer"><i className="ri-eye-line"></i>Our Vission</DropdownMenuItem>
@@ -74,10 +74,10 @@ export const Menu = () => {
                         </DropdownMenuContent>
                     </DropdownMenu>
                     <DropdownMenu>
-                        <DropdownMenuTrigger className="text-lg outline-none me-5">News</DropdownMenuTrigger>
+                        <DropdownMenuTrigger className="text-base outline-none me-5">News</DropdownMenuTrigger>
                     </DropdownMenu>
                     <DropdownMenu>
-                        <DropdownMenuTrigger className="text-lg outline-none">Shops<i className="ri-arrow-down-s-line ms-2"></i></DropdownMenuTrigger>
+                        <DropdownMenuTrigger className="text-base outline-none">Shops<i className="ri-arrow-down-s-line ms-2"></i></DropdownMenuTrigger>
                         <DropdownMenuContent className="mt-8 w-48">
                             <DropdownMenuItem className="text-base cursor-pointer"><i className="ri-user-line"></i>About Us</DropdownMenuItem>
                             <DropdownMenuItem className="text-base cursor-pointer"><i className="ri-eye-line"></i>Our Vission</DropdownMenuItem>
@@ -88,7 +88,7 @@ export const Menu = () => {
                     </DropdownMenu>
                 </div>
                 <div className="flex items-center lg:flex-row flex-col">
-                    <Link href="" className="text-lg font-medium border py-1 px-2.5 rounded-full">
+                    <Link href="" className="text-base font-medium border py-1 px-2.5 rounded-full">
                         <i className="ri-shopping-cart-2-line"></i>
                     </Link>
                     <span className="mx-3">|</span>
