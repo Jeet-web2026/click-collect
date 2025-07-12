@@ -43,17 +43,19 @@ export const Menu = () => {
         return () => document.removeEventListener("keydown", down)
     }, [])
     return (
-        <nav className="fixed z-10 top-0 left-0 w-full bg-white shadow-md">
+        <nav className="fixed z-50 top-0 left-0 border-b bg-[#ffffff45] w-full bg-transparent shadow-md">
             <div className="container flex lg:flex-row flex-col px-5 items-center justify-between">
                 <div className="flex items-center lg:flex-row flex-col">
-                    <Link href="/" className="me-8">
-                        <img src="/assets/images/logo.png" alt="web-logo" loading="lazy" className="h-[100px] w-[100px] bg-white" />
+                    <div className="absolute left-0 bg-white h-full w-[150px]" style={{ clipPath: 'polygon(0 0, 75% 0, 95% 100%, 0 100%)' }}
+                    ></div>
+                    <Link href="/" className="me-8 z-10">
+                        <img src="/assets/images/logo.png" alt="web-logo" loading="lazy" className="h-[100px] w-[100px]" />
                     </Link>
                     <DropdownMenu>
                         <DropdownMenuTrigger className="me-5">
-                            <Link href="/" className="hover:text-[#111] font-medium text-base">Home</Link>
+                            <Link href="/" className="hover:text-[#111] font-medium text-base text-white hover:text-gray-300">Home</Link>
                         </DropdownMenuTrigger>
-                        <DropdownMenuTrigger className="text-base outline-none">About Us<i className="ri-arrow-down-s-line ms-2"></i></DropdownMenuTrigger>
+                        <DropdownMenuTrigger className="text-base outline-none text-white hover:text-gray-300">About Us<i className="ri-arrow-down-s-line ms-2"></i></DropdownMenuTrigger>
                         <DropdownMenuContent className="mt-8 w-48">
                             <DropdownMenuItem className="text-base cursor-pointer"><i className="ri-user-line"></i>About Us</DropdownMenuItem>
                             <DropdownMenuItem className="text-base cursor-pointer"><i className="ri-eye-line"></i>Our Vission</DropdownMenuItem>
@@ -63,7 +65,7 @@ export const Menu = () => {
                         </DropdownMenuContent>
                     </DropdownMenu>
                     <DropdownMenu>
-                        <DropdownMenuTrigger className="text-base outline-none mx-5">Our Services<i className="ri-arrow-down-s-line ms-2"></i></DropdownMenuTrigger>
+                        <DropdownMenuTrigger className="text-base outline-none mx-5 text-white hover:text-gray-300">Our Services<i className="ri-arrow-down-s-line ms-2"></i></DropdownMenuTrigger>
                         <DropdownMenuContent className="mt-8 w-48">
                             <DropdownMenuItem className="text-base cursor-pointer"><i className="ri-user-line"></i>About Us</DropdownMenuItem>
                             <DropdownMenuItem className="text-base cursor-pointer"><i className="ri-eye-line"></i>Our Vission</DropdownMenuItem>
@@ -73,10 +75,10 @@ export const Menu = () => {
                         </DropdownMenuContent>
                     </DropdownMenu>
                     <DropdownMenu>
-                        <DropdownMenuTrigger className="text-base outline-none me-5">News</DropdownMenuTrigger>
+                        <DropdownMenuTrigger className="text-base outline-none me-5 text-white hover:text-gray-300">News</DropdownMenuTrigger>
                     </DropdownMenu>
                     <DropdownMenu>
-                        <DropdownMenuTrigger className="text-base outline-none">Shops<i className="ri-arrow-down-s-line ms-2"></i></DropdownMenuTrigger>
+                        <DropdownMenuTrigger className="text-base outline-none text-white hover:text-gray-300">Shops<i className="ri-arrow-down-s-line ms-2"></i></DropdownMenuTrigger>
                         <DropdownMenuContent className="mt-8 w-48">
                             <DropdownMenuItem className="text-base cursor-pointer"><i className="ri-user-line"></i>About Us</DropdownMenuItem>
                             <DropdownMenuItem className="text-base cursor-pointer"><i className="ri-eye-line"></i>Our Vission</DropdownMenuItem>
@@ -88,16 +90,16 @@ export const Menu = () => {
                 </div>
                 <div className="flex items-center lg:flex-row flex-col">
                     <Link href="" className="text-base font-medium border py-1 px-2.5 rounded-full">
-                        <i className="ri-shopping-cart-2-line"></i>
+                        <i className="ri-shopping-cart-2-line text-white"></i>
                     </Link>
-                    <span className="mx-3">|</span>
+                    <span className="mx-3 text-white">|</span>
                     <Button variant="outline">
                         <p className="text-muted-foreground text-sm">
-                        Press{" "}
-                        <kbd className="bg-muted text-muted-foreground pointer-events-none inline-flex h-5 items-center gap-1 rounded border px-1.5 font-mono text-[10px] font-medium opacity-100 select-none">
-                            <span className="text-xs">⌘</span>F
-                        </kbd>
-                    </p>
+                            Press{" "}
+                            <kbd className="bg-muted text-black pointer-events-none inline-flex h-5 items-center gap-1 rounded border px-1.5 font-mono text-[10px] font-medium opacity-100 select-none">
+                                <span className="text-xs">⌘</span>F
+                            </kbd>
+                        </p>
                     </Button>
                     <CommandDialog open={open} onOpenChange={setOpen}>
                         <CommandInput placeholder="Type a command or search..." />
