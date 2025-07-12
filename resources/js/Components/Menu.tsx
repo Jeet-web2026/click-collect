@@ -43,10 +43,10 @@ export const Menu = () => {
         return () => document.removeEventListener("keydown", down)
     }, [])
     return (
-        <nav className="fixed z-50 top-0 left-0 border-b bg-[#ffffff45] w-full bg-transparent shadow-md">
+        <nav className="fixed z-50 top-0 left-0 border-b bg-[#ffffff45] w-full shadow-md">
             <div className="container flex lg:flex-row flex-col px-5 items-center justify-between">
                 <div className="flex items-center lg:flex-row flex-col">
-                    <div className="absolute left-0 bg-white h-full w-[150px]" style={{ clipPath: 'polygon(0 0, 75% 0, 95% 100%, 0 100%)' }}
+                    <div className="absolute left-0 bg-gray-100 h-full w-[150px]" style={{ clipPath: 'polygon(0 0, 75% 0, 95% 100%, 0 100%)' }}
                     ></div>
                     <Link href="/" className="me-8 z-10">
                         <img src="/assets/images/logo.png" alt="web-logo" loading="lazy" className="h-[100px] w-[100px]" />
