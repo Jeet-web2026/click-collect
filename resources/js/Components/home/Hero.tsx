@@ -6,11 +6,11 @@ import {
     CarouselItem,
     CarouselNext,
     CarouselPrevious,
-} from "./ui/carousel"
+} from "../ui/carousel"
 import {
     Card,
-} from "./ui/card"
-import { Button } from './ui/button'
+} from "../ui/card"
+import { Button } from '../ui/button'
 const Hero = () => {
     const plugin = React.useRef(
         Autoplay({ delay: 2500, stopOnInteraction: false, stopOnMouseEnter: true })

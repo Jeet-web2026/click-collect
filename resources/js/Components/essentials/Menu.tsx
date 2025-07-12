@@ -5,7 +5,7 @@ import {
     DropdownMenuItem,
     DropdownMenuSeparator,
     DropdownMenuTrigger,
-} from "./ui/dropdown-menu"
+} from "../ui/dropdown-menu"
 import * as React from "react"
 import {
     Calculator,
@@ -25,8 +25,8 @@ import {
     CommandList,
     CommandSeparator,
     CommandShortcut,
-} from "./ui/command"
-import { Button } from "./ui/button"
+} from "../ui/command"
+import { Button } from "../ui/button"
 
 export const Menu = () => {
     const [open, setOpen] = React.useState(false)

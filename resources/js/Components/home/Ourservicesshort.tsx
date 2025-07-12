@@ -1,5 +1,4 @@
-import React from 'react'
-import { Card, CardContent, CardDescription, CardHeader } from './ui/card'
+import { Card, CardContent, CardDescription, CardHeader } from '../ui/card'
 
 const Ourservicesshort = () => {
     return (
