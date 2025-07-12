@@ -1,5 +1,3 @@
-import React from 'react'
-
 const About = () => {
     return (
         <section className='flex lg:flex-row flex-col p-14 gap-8'>
