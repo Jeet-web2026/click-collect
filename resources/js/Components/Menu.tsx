@@ -26,7 +26,6 @@ import {
     CommandSeparator,
     CommandShortcut,
 } from "./ui/command"
-import DangerButton from "./DangerButton"
 import { Button } from "./ui/button"
 
 export const Menu = () => {
@@ -44,7 +43,7 @@ export const Menu = () => {
         return () => document.removeEventListener("keydown", down)
     }, [])
     return (
-        <nav className="fixed top-0 left-0 w-full bg-white shadow-md">
+        <nav className="fixed z-10 top-0 left-0 w-full bg-white shadow-md">
             <div className="container flex lg:flex-row flex-col px-5 items-center justify-between">
                 <div className="flex items-center lg:flex-row flex-col">
                     <Link href="/" className="me-8">
