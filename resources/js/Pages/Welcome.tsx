@@ -4,6 +4,7 @@ import { Menu } from '@/Components/essentials/Menu';
 import Ourservicesshort from '@/Components/home/Ourservicesshort';
 import { PageProps } from '@/types';
 import { Head } from '@inertiajs/react';
+import Serviceslist from '@/Components/home/Serviceslist';
 
 export default function Welcome({
 }: PageProps<{}>) {
@@ -15,6 +16,7 @@ export default function Welcome({
             <Hero />
             <Ourservicesshort />
             <About />
+            <Serviceslist />
         </>
     );
 }

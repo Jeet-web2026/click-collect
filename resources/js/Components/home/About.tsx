@@ -6,8 +6,8 @@ const About = () => {
                 <img src="/assets/images/trucks-image.jpg" alt="back-about" className='h-64 w-64 object-cover rounded shadow-md absolute -bottom-9 right-2' loading='lazy' />
             </div>
             <div className='w-1/2 relative pe-14'>
-                <div className='w-[10%] h-[10px] bg-red-800 mb-4'></div>
-                <h6 className='uppercase text-base font-medium'>about company</h6>
+                <div className='w-[10%] h-[5px] bg-red-800 mb-4'></div>
+                <h6 className='uppercase text-base font-bold'>about company</h6>
                 <h2 className='text-4xl/[50px] font-black capitalize my-3'>global logistics solution provider 1996</h2>
                 <p className='capitalize text-lg text-red-700 font-medium'>simplify your thought and logistics with a personal approach.</p>
                 <p className='my-3 text-base opacity-75'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi consectetur vero tempora perferendis quae, ipsam dolore fugiat facilis necessitatibus ad.</p>

@@ -22,6 +22,9 @@ const Hero = () => {
                     plugins={[plugin.current]}
                     onMouseEnter={plugin.current.stop}
                     onMouseLeave={plugin.current.reset}
+                    opts={{
+                        loop: true,
+                    }}
                     className="w-full max-w-full h-full">
                     <CarouselContent>
                         <CarouselItem>
