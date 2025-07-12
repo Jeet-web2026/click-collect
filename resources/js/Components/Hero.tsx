@@ -12,6 +12,7 @@ import {
 } from "./ui/card"
 import { Button } from './ui/button'
 import Ourservicesshort from './Ourservicesshort'
+import About from './About'
 const Hero = () => {
     const plugin = React.useRef(
         Autoplay({ delay: 2500, stopOnInteraction: false, stopOnMouseEnter: true })
@@ -75,6 +76,7 @@ const Hero = () => {
                 </Card>
             </main>
             <Ourservicesshort />
+            <About />
         </>
     )
 }
