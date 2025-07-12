@@ -34,7 +34,7 @@ const Hero = () => {
                                     <div className="bg-[url(/assets/images/hero-bg.jpg)] bg-cover bg-center absolute w-full h-full"></div>
                                     <div className="flex justify-center lg:ps-[80px] flex-row w-1/2 items-center h-full w-full text-white">
                                         <div className='z-20 pt-14 px-7'>
-                                            <h1 className='text-white z-50 text-[65px]/[70px] font-bold capitalize'>get specialist cargo services worlwide</h1>
+                                            <h1 className='text-white z-50 text-[63px]/[70px] font-bold capitalize'>get specialist cargo services worlwide</h1>
                                             <Button
                                                 variant="ghost"
                                                 className="border hover:text-red-700 border-transparent hover:border-red-700 bg-red-700 mt-10 px-6 text-lg py-6 uppercase rounded-none"
@@ -55,7 +55,7 @@ const Hero = () => {
                                     <div className="bg-[url(/assets/images/hero-bg.jpg)] bg-cover bg-center absolute w-full h-full"></div>
                                     <div className="flex justify-center lg:ps-[80px] flex-row w-1/2 items-center h-full w-full text-white">
                                         <div className='z-20 pt-14 px-7'>
-                                            <h1 className='text-white z-50 text-[65px]/[70px] font-bold capitalize'>get specialist cargo services worlwide</h1>
+                                            <h1 className='text-white z-50 text-[63px]/[70px] font-bold capitalize'>get specialist cargo services worlwide</h1>
                                             <Button
                                                 variant="ghost"
                                                 className="border hover:text-red-700 border-transparent hover:border-red-700 bg-red-700 mt-10 px-6 text-lg py-6 uppercase rounded-none"
