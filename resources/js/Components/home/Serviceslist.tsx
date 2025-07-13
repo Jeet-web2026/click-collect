@@ -17,7 +17,7 @@ const Serviceslist = () => {
     return (
         <section className="bg-[#faebd726] py-14 px-8">
             <div className="flex justify-center items-center mb-3">
-                <div className="w-[7%] h-[5px] bg-red-800"></div>
+                <div className="w-[6%] h-[5px] bg-red-800"></div>
             </div>
             <p className="uppercase text-center mb-2 text-base font-bold">specialisation the transportations</p>
             <h2 className="text-center capitalize text-4xl font-black">specialist logistics services</h2>

@@ -8,7 +8,7 @@ const Ourspecilisation = () => {
             <div className="absolute w-full h-full top-0 left-0 bg-[#0000009c] z-10"></div>
             <Card className='absolute z-20 bg-transparent border-0 shadow-none'>
                 <div className="flex justify-center items-center mb-3">
-                    <div className='bg-red-700 h-[5px] w-[10%]'></div>
+                    <div className='bg-red-700 h-[5px] w-[16%]'></div>
                 </div>
                 <p className='text-center uppercase text-white'>set your products with our best services</p>
                 <h2 className='capitalize text-white text-4xl font-black text-center mb-2'>looking for the best logistics</h2>
