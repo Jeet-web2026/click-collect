@@ -18,7 +18,7 @@ const Ourteam = () => {
             <div className="flex justify-center items-center">
                 <div className="bg-red-700 w-[7%] h-[7px]"></div>
             </div>
-            <p className="uppercase text-center font-medium text-base my-2">our team</p>
+            <p className="uppercase text-center font-medium text-lg my-2">our team</p>
             <h2 className="text-center capitalize font-bold text-4xl mb-8">meet our experts</h2>
             <div className="px-14">
                 <Carousel
