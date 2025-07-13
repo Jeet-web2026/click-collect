@@ -8,6 +8,7 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "../ui/carousel"
+import { Button } from "../ui/button"
 
 const Ourbranches = () => {
     return (
@@ -19,6 +20,7 @@ const Ourbranches = () => {
                 <p className='uppercase text-lg font-medium mt-2'>our network</p>
                 <h2 className='capitalize text-4xl font-bold my-3'>works across the world</h2>
                 <p className='text-base opacity-75 capitalize'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae incidunt neque distinctio aut fuga quibusdam.</p>
+                <Button className="capitalize mt-5 text-base font-medium" variant="outline">view details<i className="ms-1 text-lg ri-arrow-right-double-line"></i></Button>
             </div>
             <div className='w-full h-full'>
                 <Carousel
