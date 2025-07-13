@@ -7,6 +7,7 @@ import Serviceslist from '@/Components/home/Serviceslist';
 import Ourspecilisation from '@/Components/home/Ourspecilisation';
 import Aboutlogistics from '@/Components/home/Aboutlogistics';
 import Ourapproach from '@/Components/home/Ourapproach';
+import Ourteam from '@/Components/home/Ourteam';
 
 export default function Welcome({
 }: PageProps<{}>) {
@@ -21,6 +22,7 @@ export default function Welcome({
             <Ourspecilisation />
             <Aboutlogistics />
             <Ourapproach />
+            <Ourteam />
         </>
     );
 }
