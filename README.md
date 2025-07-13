@@ -20,6 +20,6 @@ SPA Bridge: Inertia.js
 
 Database: MySQL
 
-Authentication: Laravel Breeze / Sanctum (assumed)
+Authentication: Laravel Breeze & Sanctum
 
 This system can be adapted for courier services, eCommerce fulfillment, or internal delivery networks. It's scalable, developer-friendly, and optimized for both admin oversight and delivery efficiency.
