@@ -5,7 +5,7 @@ import Ourservicesshort from '@/Components/home/Ourservicesshort';
 import { PageProps } from '@/types';
 import Serviceslist from '@/Components/home/Serviceslist';
 import Ourspecilisation from '@/Components/home/Ourspecilisation';
-import Aboutlogistics from '@/Components/Aboutlogistics';
+import Aboutlogistics from '@/Components/home/Aboutlogistics';
 
 export default function Welcome({
 }: PageProps<{}>) {
