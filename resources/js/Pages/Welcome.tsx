@@ -6,6 +6,7 @@ import { PageProps } from '@/types';
 import Serviceslist from '@/Components/home/Serviceslist';
 import Ourspecilisation from '@/Components/home/Ourspecilisation';
 import Aboutlogistics from '@/Components/home/Aboutlogistics';
+import Ourapproach from '@/Components/home/Ourapproach';
 
 export default function Welcome({
 }: PageProps<{}>) {
@@ -19,6 +20,7 @@ export default function Welcome({
             <Serviceslist />
             <Ourspecilisation />
             <Aboutlogistics />
+            <Ourapproach />
         </>
     );
 }
