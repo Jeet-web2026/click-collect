@@ -8,6 +8,7 @@ import Ourspecilisation from '@/Components/home/Ourspecilisation';
 import Aboutlogistics from '@/Components/home/Aboutlogistics';
 import Ourapproach from '@/Components/home/Ourapproach';
 import Ourteam from '@/Components/home/Ourteam';
+import Serviceinfo from '@/Components/home/Serviceinfo';
 
 export default function Welcome({
 }: PageProps<{}>) {
@@ -23,6 +24,7 @@ export default function Welcome({
             <Aboutlogistics />
             <Ourapproach />
             <Ourteam />
+            <Serviceinfo />
         </>
     );
 }

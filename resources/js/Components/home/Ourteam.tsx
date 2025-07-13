@@ -33,7 +33,7 @@ const Ourteam = () => {
                     <CarouselContent className="-ml-1">
                         <CarouselItem className="pl-1 md:basis-1/2 lg:basis-1/3 px-10">
                             <Card className="rounded-lg border-gray-200 overflow-hidden bg-transparent">
-                                <img src="/assets/images/user_default.jpg" alt="people-image" className="h-48 rounded-none w-full object-cover" loading="lazy" />
+                                <img src="/assets/images/user_default.jpg" alt="people-image" className="h-64 rounded-none w-full object-cover" loading="lazy" />
                                 <CardContent className="mt-5">
                                     <p className="capitalize font-medium text-lg mt-3 opacity-75">executive</p>
                                     <h3 className="capitalize font-bold text-2xl">pawan kumar</h3>
@@ -42,7 +42,7 @@ const Ourteam = () => {
                         </CarouselItem>
                         <CarouselItem className="pl-1 md:basis-1/2 lg:basis-1/3 px-10">
                             <Card className="rounded-lg border-gray-200 overflow-hidden bg-transparent">
-                                <img src="/assets/images/user_default.jpg" alt="people-image" className="h-48 rounded-none w-full object-cover" loading="lazy" />
+                                <img src="/assets/images/user_default.jpg" alt="people-image" className="h-64 rounded-none w-full object-cover" loading="lazy" />
                                 <CardContent className="mt-5">
                                     <p className="capitalize font-medium text-lg mt-3 opacity-75">executive</p>
                                     <h3 className="capitalize font-bold text-2xl">pawan kumar</h3>
@@ -51,7 +51,7 @@ const Ourteam = () => {
                         </CarouselItem>
                         <CarouselItem className="pl-1 md:basis-1/2 lg:basis-1/3 px-10">
                             <Card className="rounded-lg border-gray-200 overflow-hidden bg-transparent">
-                                <img src="/assets/images/user_default.jpg" alt="people-image" className="h-48 rounded-none w-full object-cover" loading="lazy" />
+                                <img src="/assets/images/user_default.jpg" alt="people-image" className="h-64 rounded-none w-full object-cover" loading="lazy" />
                                 <CardContent className="mt-5">
                                     <p className="capitalize font-medium text-lg mt-3 opacity-75">executive</p>
                                     <h3 className="capitalize font-bold text-2xl">pawan kumar</h3>
@@ -60,7 +60,7 @@ const Ourteam = () => {
                         </CarouselItem>
                         <CarouselItem className="pl-1 md:basis-1/2 lg:basis-1/3 px-10">
                             <Card className="rounded-lg border-gray-200 overflow-hidden bg-transparent">
-                                <img src="/assets/images/user_default.jpg" alt="people-image" className="h-48 rounded-none w-full object-cover" loading="lazy" />
+                                <img src="/assets/images/user_default.jpg" alt="people-image" className="h-64 rounded-none w-full object-cover" loading="lazy" />
                                 <CardContent className="mt-5">
                                     <p className="capitalize font-medium text-lg mt-3 opacity-75">executive</p>
                                     <h3 className="capitalize font-bold text-2xl">pawan kumar</h3>
@@ -69,7 +69,7 @@ const Ourteam = () => {
                         </CarouselItem>
                         <CarouselItem className="pl-1 md:basis-1/2 lg:basis-1/3 px-10">
                             <Card className="rounded-lg border-gray-200 overflow-hidden bg-transparent">
-                                <img src="/assets/images/user_default.jpg" alt="people-image" className="h-48 rounded-none w-full object-cover" loading="lazy" />
+                                <img src="/assets/images/user_default.jpg" alt="people-image" className="h-64 rounded-none w-full object-cover" loading="lazy" />
                                 <CardContent className="mt-5">
                                     <p className="capitalize font-medium text-lg mt-3 opacity-75">executive</p>
                                     <h3 className="capitalize font-bold text-2xl">pawan kumar</h3>
