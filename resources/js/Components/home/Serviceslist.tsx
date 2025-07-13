@@ -5,11 +5,14 @@ import {
     Carousel,
     CarouselContent,
     CarouselItem,
+    CarouselNext,
+    CarouselPrevious,
 } from "../ui/carousel"
 
 const Serviceslist = () => {
+    const [isHover, setHover] = React.useState(false)
     const plugin = React.useRef(
-        Autoplay({ delay: 2000, stopOnInteraction: true })
+        Autoplay({ delay: 2000 })
     )
     return (
         <section className="bg-[#faebd726] py-14 px-8">
@@ -21,8 +24,14 @@ const Serviceslist = () => {
             <Card className="my-10 border-0 bg-transparent shadow-none">
                 <Carousel
                     plugins={[plugin.current]}
-                    onMouseEnter={plugin.current.stop}
-                    onMouseLeave={plugin.current.reset}
+                    onMouseEnter={() => {
+                        plugin.current?.stop();
+                        setHover(true);
+                    }}
+                    onMouseLeave={() => {
+                        plugin.current?.reset();
+                        setHover(false);
+                    }}
                     opts={{
                         loop: true,
                     }}
@@ -65,6 +74,8 @@ const Serviceslist = () => {
                             <h3 className='text-white absolute bottom-5 capitalize z-20 text-2xl font-bold'>other services</h3>
                         </CarouselItem>
                     </CarouselContent>
+                    <CarouselNext className={`right-2 transition-opacity duration-300 h-10 w-10 ${isHover ? 'opacity-100' : 'opacity-0'}`} />
+                    <CarouselPrevious className={`left-2 transition-opacity duration-300 h-10 w-10 ${isHover ? 'opacity-100' : 'opacity-0'}`} />
                 </Carousel>
             </Card>
             <Card className='flex justify-center items-center border-0 mt-14 bg-transparent shadow-none'>

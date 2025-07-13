@@ -5,6 +5,7 @@ import Ourservicesshort from '@/Components/home/Ourservicesshort';
 import { PageProps } from '@/types';
 import { Head } from '@inertiajs/react';
 import Serviceslist from '@/Components/home/Serviceslist';
+import Ourspecilisation from '@/Components/home/Ourspecilisation';
 
 export default function Welcome({
 }: PageProps<{}>) {
@@ -17,6 +18,7 @@ export default function Welcome({
             <Ourservicesshort />
             <About />
             <Serviceslist />
+            <Ourspecilisation />
         </>
     );
 }
