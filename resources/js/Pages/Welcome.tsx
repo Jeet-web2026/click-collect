@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import About from '@/Components/home/About';
 import Hero from '@/Components/home/Hero';
 import { Menu } from '@/Components/essentials/Menu';
@@ -12,9 +13,23 @@ import Serviceinfo from '@/Components/home/Serviceinfo';
 import Ourbranches from '@/Components/home/Ourbranches';
 import Contactus from '@/Components/home/Contactus';
 import Blogs from '@/Components/home/Blogs';
+import axios from 'axios';
 
-export default function Welcome({
-}: PageProps<{}>) {
+export default function Welcome(props: PageProps<{}>) {
+    const [data, setData] = useState([]);
+    const [partners, setPartners] = useState([]);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            const blogRes = await axios.get('https://picsum.photos/v2/list?page=2&limit=100');
+            const partnerRes = await axios.get('https://picsum.photos/v2/list');
+
+            setData(blogRes.data);
+            setPartners(partnerRes.data);
+        };
+
+        fetchData();
+    }, []);
 
     return (
         <>
@@ -30,7 +45,7 @@ export default function Welcome({
             <Serviceinfo />
             <Ourbranches />
             <Contactus />
-            <Blogs />
+            <Blogs data={data} partners={partners} />
         </>
     );
 }
