@@ -18,14 +18,22 @@ import axios from 'axios';
 export default function Welcome(props: PageProps<{}>) {
     const [data, setData] = useState([]);
     const [partners, setPartners] = useState([]);
+    const [error, setError] = useState('')
+    const [loading, setLoading] = useState(true)
 
     useEffect(() => {
         const fetchData = async () => {
-            const blogRes = await axios.get('https://picsum.photos/v2/list?page=2&limit=100');
-            const partnerRes = await axios.get('https://picsum.photos/v2/list');
+            try {
+                const blogRes = await axios.get('https://picsum.photos/v2/list?page=2&limit=100');
+                const partnerRes = await axios.get('https://picsum.photos/v2/list');
 
-            setData(blogRes.data);
-            setPartners(partnerRes.data);
+                setData(blogRes.data);
+                setPartners(partnerRes.data);
+            } catch (error: any) {
+                setError(error.message || 'Unknown error occurred')
+            } finally {
+                setLoading(false)
+            }
         };
 
         fetchData();
@@ -45,7 +53,13 @@ export default function Welcome(props: PageProps<{}>) {
             <Serviceinfo />
             <Ourbranches />
             <Contactus />
-            <Blogs data={data} partners={partners} />
+            <Blogs
+                data={data}
+                partners={partners}
+                loading={loading}
+                error={error}
+            />
+
         </>
     );
 }

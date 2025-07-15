@@ -13,8 +13,10 @@ import {
 type BlogsProps = {
     data: any[];
     partners: any[];
+    loading: boolean;
+    error: string;
 };
-const Blogs = ({ data, partners }: BlogsProps) => {
+const Blogs = ({ data, partners, loading, error }: BlogsProps) => {
     const plugin = React.useRef(
         Autoplay({ delay: 2500, stopOnInteraction: true })
     )
