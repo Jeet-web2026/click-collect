@@ -47,7 +47,7 @@ const Footer = () => {
                 <Card className='bg-transparent border-0 w-2/4'>
                     <div className="flex justify-start items-center">
                         <img src="/assets/images/logo.png" alt="website-logo" className='h-24 w-24' />
-                        <h2 className='text-white capitalize font-medium text-4xl'>click & collect</h2>
+                        <h2 className='text-white capitalize font-medium text-[32px]'>click & collect</h2>
                     </div>
                     <p className="text-white text-base ms-3">Click & Collect is a modern logistics management system offering shipment tracking, inventory control, warehouse integration, delivery scheduling, and real-time customer communication tools.</p>
                     <Button variant="outline" className='capitalize text-white bg-red-700 border-0 rounded-none text-base mt-5 ms-3 px-5 hover:text-red-700 hover:border hover:border-red-700 border border-transparent transition duration-300'>let's talk</Button>
