@@ -14,6 +14,7 @@ import Ourbranches from '@/Components/home/Ourbranches';
 import Contactus from '@/Components/home/Contactus';
 import Blogs from '@/Components/home/Blogs';
 import axios from 'axios';
+import Footer from '@/Components/essentials/Footer';
 
 export default function Welcome(props: PageProps<{}>) {
     const [data, setData] = useState([]);
@@ -59,7 +60,7 @@ export default function Welcome(props: PageProps<{}>) {
                 loading={loading}
                 error={error}
             />
-
+            <Footer />
         </>
     );
 }

@@ -29,7 +29,7 @@ const Blogs = ({ data, partners, loading, error }: BlogsProps) => {
                 <p className='uppercase text-center font-medium text-lg mt-2'>latest news & updates</p>
                 <h2 className='capitalize text-center text-4xl font-bold mb-1 mt-3'>latest news, advices & latest</h2>
                 <h2 className='capitalize text-center text-4xl font-bold'>posts from our blog</h2>
-                <div className="px-14 mt-8 mx-12">
+                <div className="px-14 mt-8">
                     <Carousel
                         opts={{
                             align: "start",
@@ -61,8 +61,8 @@ const Blogs = ({ data, partners, loading, error }: BlogsProps) => {
                     </Carousel>
                 </div>
             </section>
-            <section className="px-10 pb-10 bg-[#faebd726]">
-                <div className="px-14 mx-12">
+            <section className="pb-14 bg-[#faebd726]">
+                <div className="px-14 mx-14">
                     <Carousel
                         plugins={[plugin.current]}
                         onMouseEnter={plugin.current.stop}
