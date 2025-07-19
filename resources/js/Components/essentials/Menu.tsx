@@ -72,15 +72,15 @@ export const Menu = () => {
                                 <DropdownMenuItem className="text-base cursor-pointer"><i className="ri-eye-line"></i>Our Vission</DropdownMenuItem>
                                 <DropdownMenuItem className="text-base cursor-pointer"><i className="ri-focus-3-line"></i>Our Mission</DropdownMenuItem>
                                 <DropdownMenuSeparator />
-                                <DropdownMenuItem className="text-base font-medium cursor-pointer"><i className="ri-service-line"></i>All Activities</DropdownMenuItem>
+                                <DropdownMenuItem className="text-base font-medium cursor-pointer"><i className="ri-links-fill"></i>All Activities</DropdownMenuItem>
                             </DropdownMenuContent>
                         </DropdownMenu>
                         <DropdownMenu>
                             <DropdownMenuTrigger className="text-base outline-none mx-5 text-white hover:text-gray-300">Our Services<i className="ri-arrow-down-s-line ms-2"></i></DropdownMenuTrigger>
-                            <DropdownMenuContent className="mt-8 w-48">
-                                <DropdownMenuItem className="text-base cursor-pointer"><i className="ri-user-line"></i>About Us</DropdownMenuItem>
-                                <DropdownMenuItem className="text-base cursor-pointer"><i className="ri-eye-line"></i>Our Vission</DropdownMenuItem>
-                                <DropdownMenuItem className="text-base cursor-pointer"><i className="ri-focus-3-line"></i>Our Mission</DropdownMenuItem>
+                            <DropdownMenuContent className="mt-8 w-64">
+                                <DropdownMenuItem className="text-base cursor-pointer"><i className="ri-archive-stack-line"></i>Logistics Services</DropdownMenuItem>
+                                <DropdownMenuItem className="text-base cursor-pointer"><i className="ri-instance-line"></i>Product Management</DropdownMenuItem>
+                                <DropdownMenuItem className="text-base cursor-pointer"><i className="ri-checkbox-multiple-line"></i>Digital Services</DropdownMenuItem>
                                 <DropdownMenuSeparator />
                                 <DropdownMenuItem className="text-base font-medium cursor-pointer"><i className="ri-service-line"></i>All Services</DropdownMenuItem>
                             </DropdownMenuContent>
@@ -89,14 +89,7 @@ export const Menu = () => {
                             <DropdownMenuTrigger className="text-base outline-none me-5 text-white hover:text-gray-300">News</DropdownMenuTrigger>
                         </DropdownMenu>
                         <DropdownMenu>
-                            <DropdownMenuTrigger className="text-base outline-none text-white hover:text-gray-300">Shops<i className="ri-arrow-down-s-line ms-2"></i></DropdownMenuTrigger>
-                            <DropdownMenuContent className="mt-8 w-48">
-                                <DropdownMenuItem className="text-base cursor-pointer"><i className="ri-user-line"></i>About Us</DropdownMenuItem>
-                                <DropdownMenuItem className="text-base cursor-pointer"><i className="ri-eye-line"></i>Our Vission</DropdownMenuItem>
-                                <DropdownMenuItem className="text-base cursor-pointer"><i className="ri-focus-3-line"></i>Our Mission</DropdownMenuItem>
-                                <DropdownMenuSeparator />
-                                <DropdownMenuItem className="text-base font-medium cursor-pointer"><i className="ri-service-line"></i>All Services</DropdownMenuItem>
-                            </DropdownMenuContent>
+                            <DropdownMenuTrigger className="text-base outline-none text-white hover:text-gray-300">Branches</DropdownMenuTrigger>
                         </DropdownMenu>
                     </div>
                     <div className="flex items-center lg:flex-row flex-col">
