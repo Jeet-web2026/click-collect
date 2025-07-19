@@ -29,7 +29,7 @@ const Hero = () => {
                     <CarouselContent>
                         <CarouselItem>
                             <Card className='h-screen w-full flex flex-col lg:flex-row rounded-none border-none relative'>
-                                <div className='bg-[#0000006e] absolute w-5/6 h-full z-10' style={{ clipPath: 'polygon(0 0, 50% 0, 95% 100%, 0 100%)' }}></div>
+                                <div className='bg-[#00000094] absolute w-5/6 h-full z-10' style={{ clipPath: 'polygon(0 0, 50% 0, 95% 100%, 0 100%)' }}></div>
                                 <div className='bg-[#00000061] absolute w-full h-full z-10'></div>
                                 <div className="bg-[url(/assets/images/hero-bg.jpg)] bg-cover bg-center absolute w-full h-full"></div>
                                 <div className="flex justify-center lg:ps-[80px] flex-row w-1/2 items-center h-full w-full text-white">
@@ -43,14 +43,14 @@ const Hero = () => {
                                         </Button>
                                     </div>
                                 </div>
-                                <div className="flex justify-center z-50 flex-row w-1/2 items-center relative h-full w-full text-white pt-14">
-                                    <img src="/assets/images/truck-sample.png" alt="truck-services" className='h-[550px] -left-5 absolute w-full' />
+                                <div className="flex justify-center z-50 flex-row items-center relative h-full w-full absolute text-white pt-14 -left-14">
+                                    <img src="/assets/images/truck-sample.png" alt="truck-services" className='h-[550px]' />
                                 </div>
                             </Card>
                         </CarouselItem>
                         <CarouselItem>
                             <Card className='h-screen w-full flex flex-col lg:flex-row rounded-none border-none relative'>
-                                <div className='bg-[#0000006e] absolute w-5/6 h-full z-10' style={{ clipPath: 'polygon(0 0, 50% 0, 95% 100%, 0 100%)' }}></div>
+                                <div className='bg-[#00000094] absolute w-5/6 h-full z-10' style={{ clipPath: 'polygon(0 0, 50% 0, 95% 100%, 0 100%)' }}></div>
                                 <div className='bg-[#00000061] absolute w-full h-full z-10'></div>
                                 <div className="bg-[url(/assets/images/hero-bg.jpg)] bg-cover bg-center absolute w-full h-full"></div>
                                 <div className="flex justify-center lg:ps-[80px] flex-row w-1/2 items-center h-full w-full text-white">
@@ -64,8 +64,8 @@ const Hero = () => {
                                         </Button>
                                     </div>
                                 </div>
-                                <div className="flex justify-center z-50 flex-row w-1/2 items-center relative h-full w-full text-white pt-14">
-                                    <img src="/assets/images/truck-sample.png" alt="truck-services" className='h-[550px] -left-5 absolute w-full' />
+                                <div className="flex justify-center z-50 flex-row items-center relative h-full w-full absolute text-white pt-14 -left-14">
+                                    <img src="/assets/images/truck-sample.png" alt="truck-services" className='h-[550px]' />
                                 </div>
                             </Card>
                         </CarouselItem>
