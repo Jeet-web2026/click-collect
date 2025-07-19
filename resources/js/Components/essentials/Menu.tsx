@@ -104,9 +104,9 @@ export const Menu = () => {
                             <i className="ri-shopping-cart-2-line text-white"></i>
                         </Link>
                         <span className="mx-3 text-white">|</span>
-                        <Button variant="outline" className="bg-transparent rounded-full px-2.5">
-                            <p className="text-muted-foreground text-sm">
-                                <i className="ri-search-2-line text-white"></i>
+                        <Button variant="outline" className="bg-transparent rounded-full px-2.5 hover:bg-transparent">
+                            <p className="text-muted-foreground text-base text-white">
+                                <i className="ri-search-2-line"></i>
                             </p>
                         </Button>
                         <CommandDialog open={open} onOpenChange={setOpen}>
@@ -147,7 +147,7 @@ export const Menu = () => {
                                 </CommandGroup>
                             </CommandList>
                         </CommandDialog>
-                        <Button variant="outline" className="ms-3 text-base rounded-none border border-transparent hover:bg-white hover:border-red-500 py-5 ms-5 bg-red-700 text-white duration-500 transition ease-in-out"><i className="ri-discuss-line"></i>Get a Quote</Button>
+                        <Button variant="outline" className="ms-3 text-base rounded-none border border-transparent hover:bg-white hover:border-red-500 py-5 ms-5 bg-red-700 text-white duration-500 transition ease-in-out hover:text-red-700"><i className="ri-discuss-line"></i>Get a Quote</Button>
                     </div>
                 </div>
             </nav>
