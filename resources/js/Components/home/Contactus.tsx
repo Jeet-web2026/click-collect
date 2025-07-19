@@ -1,5 +1,7 @@
-const Contactus = () => {
+import { Button } from "../ui/button"
+import { Card, CardContent } from "../ui/card"
 
+const Contactus = () => {
     return (
         <section className='p-14 flex lg:flex-row flex-col gap-10'>
             <div className='lg:w-1/2 w-full'>
@@ -16,7 +18,27 @@ const Contactus = () => {
                 </div>
             </div>
             <div className='w-full'>
-                
+                <Card className="shadow-lg border-0 bg-red-700 rounded-sm p-5 w-3/4 ms-auto">
+                    <CardContent>
+                        <h3 className="text-3xl capitalize font-bold text-white mb-5 mt-3">get touch with us!</h3>
+                        <form action="" method="post" className="w-full">
+                            <input type="text" placeholder="Enter your full name here" className="w-full rounded-sm placeholder:text-gray-500" />
+                            <div className="flex lg:flex-row flex-col items-center mt-3">
+                                <input type="email" placeholder="Enter your email here" className="w-full me-1 rounded-sm placeholder:text-gray-500" />
+                                <input type="tel" placeholder="Enter your contact number" className="w-full ms-1 rounded-sm placeholder:text-gray-500" />
+                            </div>
+                            <div className="flex lg:flex-row flex-col items-center mt-3">
+                                <input type="text" placeholder="Enter your skype id" className="w-full rounded-sm placeholder:text-gray-500" />
+                            </div>
+                            <div className="flex lg:flex-row flex-col items-center mt-3">
+                                <textarea name="" id="" placeholder="Enter your details here" className="w-full rounded-sm placeholder:text-gray-500"></textarea>
+                            </div>
+                            <Button variant="outline" className="capitalize font-medium mt-5 text-lg rounded-sm px-5">
+                                send<i className="ri-send-plane-line"></i>
+                            </Button>
+                        </form>
+                    </CardContent>
+                </Card>
             </div>
         </section>
     )
