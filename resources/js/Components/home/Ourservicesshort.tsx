@@ -2,7 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader } from '../ui/card'
 
 const Ourservicesshort = () => {
     return (
-        <section className='flex lg:flex-row flex-col p-14 bg-[#faebd726] items-center justify-between gap-10'>
+        <section className='flex lg:flex-row flex-col p-14 bg-[#faebd752] items-center justify-between gap-10'>
             <div className='lg:w-1/2 w-full'>
                 <h4 className='text-4xl text-gray-700 font-medium'>We offers cost efficient</h4>
                 <h4 className='text-4xl text-black font-black capitalize mt-3'>Transport shipping & Best Services.</h4>

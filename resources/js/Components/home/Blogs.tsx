@@ -22,7 +22,7 @@ const Blogs = ({ data, partners, loading, error }: BlogsProps) => {
     )
     return (
         <>
-            <section className='p-14 bg-[#faebd726]'>
+            <section className='p-14 bg-[#faebd752]'>
                 <div className="flex justify-center items-center">
                     <div className="bg-red-700 w-[7%] h-[7px]"></div>
                 </div>

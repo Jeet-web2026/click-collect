@@ -12,7 +12,7 @@ import { Button } from "../ui/button"
 
 const Ourbranches = () => {
     return (
-        <section className='p-14 bg-[#faebd726] flex lg:flex-row flex-col gap-14'>
+        <section className='p-14 bg-[#faebd752] flex lg:flex-row flex-col gap-14'>
             <div className='w-1/3'>
                 <div className="flex justify-start items-center">
                     <div className="bg-red-700 w-[25%] h-[7px]"></div>

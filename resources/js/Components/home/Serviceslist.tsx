@@ -15,7 +15,7 @@ const Serviceslist = () => {
         Autoplay({ delay: 2000 })
     )
     return (
-        <section className="bg-[#faebd726] py-14 px-8">
+        <section className="bg-[#faebd752] py-14 px-8">
             <div className="flex justify-center items-center mb-3">
                 <div className="w-[6%] h-[5px] bg-red-800"></div>
             </div>
