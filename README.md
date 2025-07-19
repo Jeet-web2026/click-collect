@@ -1,4 +1,4 @@
-Click & Collect is a full-stack Logistics Management System built using React, Laravel, and Inertia.js, designed to streamline the process of package collection, delivery, and tracking for logistics or courier-based businesses.
+#Click & Collect is a full-stack Logistics Management System built using React, Laravel, and Inertia.js, designed to streamline the process of package collection, delivery, and tracking for logistics or courier-based businesses.
 
 🚀 Key Features:
 Multi-role Access: Admin, delivery personnel, and clients have dedicated interfaces with tailored permissions.
