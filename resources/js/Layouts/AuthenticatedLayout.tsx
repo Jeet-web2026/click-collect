@@ -1,9 +1,9 @@
 import { DropdownMenu } from '@/Components/ui/dropdown-menu';
 import { Link } from '@inertiajs/react'
 import { usePage } from '@inertiajs/react'
-import React from 'react'
+import React, { Children, PropsWithChildren } from 'react'
 
-const AuthenticatedLayout = () => {
+const AuthenticatedLayout = ({ children }: PropsWithChildren) => {
     const user = usePage().props.auth?.user;
     return (
         <>
@@ -15,6 +15,7 @@ const AuthenticatedLayout = () => {
                     
                 </DropdownMenu>
             </nav>
+            {children}
         </>
     )
 }
