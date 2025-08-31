@@ -25,7 +25,7 @@ export default function Register() {
     return (
         <GuestLayout>
             <Head title="Register" />
-
+            <img src="/assets/images/logo.png" alt="logo" className='h-24 mx-auto' />
             <form onSubmit={submit}>
                 <h2 className='text-3xl text-center mb-5 font-semibold'>Register</h2>
                 <div>

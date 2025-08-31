@@ -70,8 +70,8 @@ const Footer = () => {
                         <ul className='mt-7'>
                             <li className='text-base text-white capitalize mb-1'><Link href="/">testimonials</Link></li>
                             <li className='text-base text-white capitalize mb-1'><Link href="/">vendor's login</Link></li>
-                            <li className='text-base text-white capitalize mb-1'><Link href={route('register')}>admin login</Link></li>
-                            <li className='text-base text-white capitalize mb-1'><Link href="/">login</Link></li>
+                            <li className='text-base text-white capitalize mb-1'><Link href="/">admin login</Link></li>
+                            <li className='text-base text-white capitalize mb-1'><Link href={route('register')}>login</Link></li>
                             <li className='text-base text-white capitalize'><Link href="/">refer & earn</Link></li>
                         </ul>
                     </div>
