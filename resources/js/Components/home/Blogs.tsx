@@ -8,6 +8,7 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "../ui/carousel"
+import { Skeleton } from "../ui/skeleton";
 
 
 type BlogsProps = {
@@ -38,23 +39,49 @@ const Blogs = ({ data, partners, loading, error }: BlogsProps) => {
                         className="w-full"
                     >
                         <CarouselContent>
-                            {data.map(function (fetchdata, idx) {
-                                return <CarouselItem key={idx} className="md:basis-1/2 lg:basis-1/3 py-2">
-                                    <Card className="rounded-md border border-gray-100 overflow-hidden shadow-md">
-                                        <div className="relative">
-                                            <img src={fetchdata.download_url} alt={fetchdata.author} className="h-48 w-full mb-3" loading="lazy" />
-                                            <span className="absolute -bottom-2 right-3 rounded-sm bg-red-700 p-2">
-                                                <i className="ri-news-line text-white text-3xl"></i>
-                                            </span>
+                            {loading ? (
+                                Array.from({ length: 5 }).map((_, idx) => (
+                                    <div key={idx} className="flex flex-col space-y-3 mx-5">
+                                        <Skeleton className="h-[250px] w-[250px] rounded-xl" />
+                                        <div className="space-y-2">
+                                            <Skeleton className="h-4 w-[250px]" />
+                                            <Skeleton className="h-4 w-[200px]" />
                                         </div>
-                                        <CardContent>
-                                            <span className="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-gray-500/10 ring-inset mb-3">{fetchdata.author}</span>
-                                            <p className="capitalize text-base opacity-75 font-medium">lorem ipsum</p>
-                                            <h5 className="mt-3 text-lg font-bold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, sint!</h5>
-                                        </CardContent>
-                                    </Card>
-                                </CarouselItem>
-                            })}
+                                    </div>
+                                ))
+                            ) : (
+                                data.map((fetchdata, idx) => (
+                                    <CarouselItem
+                                        key={idx}
+                                        className="md:basis-1/2 lg:basis-1/3 py-2"
+                                    >
+                                        <Card className="rounded-md border border-gray-100 overflow-hidden shadow-md">
+                                            <div className="relative">
+                                                <img
+                                                    src={fetchdata.download_url}
+                                                    alt={fetchdata.author}
+                                                    className="h-48 w-full mb-3"
+                                                    loading="lazy"
+                                                />
+                                                <span className="absolute -bottom-2 right-3 rounded-sm bg-red-700 p-2">
+                                                    <i className="ri-news-line text-white text-3xl"></i>
+                                                </span>
+                                            </div>
+                                            <CardContent>
+                                                <span className="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-gray-500/10 ring-inset mb-3">
+                                                    {fetchdata.author}
+                                                </span>
+                                                <p className="capitalize text-base opacity-75 font-medium">
+                                                    lorem ipsum
+                                                </p>
+                                                <h5 className="mt-3 text-lg font-bold">
+                                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, sint!
+                                                </h5>
+                                            </CardContent>
+                                        </Card>
+                                    </CarouselItem>
+                                ))
+                            )}
                         </CarouselContent>
                         <CarouselPrevious />
                         <CarouselNext />
@@ -72,11 +99,24 @@ const Blogs = ({ data, partners, loading, error }: BlogsProps) => {
                         }}
                     >
                         <CarouselContent>
-                            {partners.map(function (partnerData, idx) {
-                                return <CarouselItem key={idx} className="basis-1/5">
-                                    <img src={partnerData.download_url} alt="our-partners" className="h-32 w-full rounded-sm shadow-sm opacity-65 hover:opacity-100 transition-opacity duration-300 cursor-pointer" loading="lazy" />
-                                </CarouselItem>
-                            })}
+                            {loading ? (
+                                Array.from({ length: 5 }).map((_, idx) => (
+                                    <CarouselItem key={idx} className="basis-1/5">
+                                        <Skeleton className="h-32 w-full rounded-sm shadow-sm" />
+                                    </CarouselItem>
+                                ))
+                            ) : (
+                                partners.map((partnerData, idx) => (
+                                    <CarouselItem key={idx} className="basis-1/5">
+                                        <img
+                                            src={partnerData.download_url}
+                                            alt="our-partners"
+                                            className="h-32 w-full rounded-sm shadow-sm opacity-65 hover:opacity-100 transition-opacity duration-300 cursor-pointer"
+                                            loading="lazy"
+                                        />
+                                    </CarouselItem>
+                                ))
+                            )}
                         </CarouselContent>
                     </Carousel>
                 </div>

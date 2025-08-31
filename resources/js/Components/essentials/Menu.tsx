@@ -31,15 +31,6 @@ import { Button } from "../ui/button"
 
 export const Menu = () => {
     const [open, setOpen] = React.useState(false)
-    const [isScrolled, setIsScrolled] = useState(false)
-    useEffect(() => {
-        const handleScroll = () => {
-            const scrollTop = window.scrollY;
-            setIsScrolled(scrollTop > 0);
-        };
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
 
     React.useEffect(() => {
         const down = (e: KeyboardEvent) => {
@@ -54,7 +45,7 @@ export const Menu = () => {
     }, [])
     return (
         <header className="fixed top-0 left-0 z-50 w-full shadow-md">
-            <nav className={`border-b ${isScrolled ? 'bg-black' : 'bg-[#ffffff45]'} w-full`}>
+            <nav className={`border-b bg-black w-full`}>
                 <div className="container flex lg:flex-row flex-col px-5 items-center justify-between">
                     <div className="flex items-center lg:flex-row flex-col">
                         <div className="absolute left-0 bg-white h-full w-[150px]" style={{ clipPath: 'polygon(0 0, 75% 0, 95% 100%, 0 100%)', height: '100px' }}
