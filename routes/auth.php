@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminauthController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\Auth\ConfirmablePasswordController;
 use App\Http\Controllers\Auth\EmailVerificationNotificationController;
@@ -56,4 +57,7 @@ Route::middleware('auth')->group(function () {
 
     Route::post('logout', [AuthenticatedSessionController::class, 'destroy'])
         ->name('logout');
+    Route::controller(AdminauthController::class)->group(function () {
+        Route::get('admin-login', 'Authentication')->name('superadmin-login');
+    });
 });
